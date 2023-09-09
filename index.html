@@ -1,0 +1,267 @@
+<html>
+    <head>
+        <title>SSE Landing Page</title>
+        <style type="text/css">
+            .main{
+                width: 100%;
+                height: 100%;
+                justify-content: space-around;
+                display: contents;
+                align-items: center;
+
+            }
+            header{
+                background-image:linear-gradient(rgba(200, 100, 100, 0.3),rgba(100, 100, 200, 0.3)), url("sea.jpg");
+
+                width: 100%;
+                height: 100vh;
+                background-size: cover;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .direc{
+                font-size: 30px;
+                color: aliceblue;
+                top: 50%;
+                left:50%;
+                text-align: center;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                letter-spacing: 2px;
+
+            }
+            .htxt{
+                font-size: 60px;
+                background:linear-gradient(0deg,rgba(248, 248, 248, 0.8), rgba(188, 199, 207, 0.8));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                top: 50%;
+                left:50%;
+                text-align: center;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                letter-spacing: 2px;
+                color: #D4AF37;
+            }
+            .cast {
+                font-size: 30px;
+                color: aliceblue;
+                top: 50%;
+                left:50%;
+                text-align: center;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                letter-spacing: 2px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                
+            }
+            nav{
+                width: 100%;
+                height: 100px;
+                color: rgb(200, 234, 240);
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .teaser {
+                font-size: large;
+                display: flex ;
+                align-items: center;
+                justify-content: space-around;
+            }
+            footer{
+                text-align: center;
+            }
+            .learn{
+                font-size: large;
+                display: flex ;
+                align-items: center;
+                justify-content: space-around;
+            }
+            .buttonon {
+                background: linear-gradient(0deg,rgba(248, 248, 248, 0.8), rgba(188, 199, 207, 0.8));
+                border: 2px solid #9cd5d5;
+                border-radius: 30px;
+                box-shadow: #1996c8 4px 4px 0 0;
+                color: #1996c8;
+                cursor: pointer;
+                display: inline-block;
+                font-weight: 600;
+                font-size: 18px;
+                padding: 0 18px;
+                line-height: 50px;
+                text-align: center;
+                text-decoration: none;
+                user-select: none;
+                -webkit-user-select: none;
+                touch-action: manipulation;
+            }
+
+            .buttonon:hover {
+                background-color: rgb(5, 192, 202,10);
+                opacity: 0.8;
+            }
+
+            .buttonon:active {
+                box-shadow: #79c3cb 2px 2px 0 0;
+                transform: translate(2px, 2px);
+            }
+
+            @media (min-width: 768px) {
+            .buttonon {
+            min-width: 120px;
+            padding: 0 25px;
+            }
+            .pagetwo{
+                background-image: linear-gradient(rgba(200, 100, 100, 0.3),rgba(100, 100, 200, 0.3)), url(sse2.jpg);
+                width: 100%;
+                height: 100vh;
+                background-size: cover;
+                
+                
+            }
+            .come{
+                width:100%; 
+                text-align: left;
+                margin-left: 2vb; 
+                top: 50vh; 
+                font-size: 60px;
+                color: rgb(255, 255, 255);
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                background:linear-gradient(0deg,rgba(248, 248, 248, 0.8), rgba(188, 199, 207, 0.8));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            .about{
+                font-size: 14px;
+                color: rgb(255, 255, 255);
+                margin-left: 20px;
+                
+            }
+            .abouth a{
+                font-size: large;
+                letter-spacing: 3px;
+                color: rgb(200, 234, 240);
+                background-color: linear-gradient(0deg,rgba(248, 248, 248, 0.8), rgba(188, 199, 207, 0.8));
+                text-decoration: none;
+                padding: 10px 20px;
+                position: relative;
+            }
+            .abouth a:before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0%;
+                height: 100%;
+                border-bottom: 2px solid rgb(200,234,240);
+                transition: 0.4s linear;
+            }
+            .abouth a:hover:before{
+                width: 100%;
+            }
+            .logo a{
+                font-size: large;
+                letter-spacing: 3px;
+                color: rgb(200,234,240);
+                text-decoration: none;
+                padding: 10px 20px;
+                position: relative;
+                background-color: linear-gradient(0deg,rgba(248, 248, 248, 0.8), rgba(188, 199, 207, 0.8));
+            }
+            .logo a:before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0%;
+                height: 0%;
+                color: rgb(200,234,240);
+                border: 2px solid rgb(220, 235, 14);
+                transition: 0.1s linear;
+            }
+            .logo a:hover:before{
+                width: 100%;
+                height: 100%;
+                color: rgb(220, 235, 14);
+            }
+}
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="https://hombalefilms.com/">
+                    Hombale Films
+                </a>
+                </div>
+                <div class="abouth">
+                    <a href="#pageone">
+                        Home
+                    </a>
+                </div>
+                <div class="abouth">
+                    <a href="#pagetwo">
+                        About
+                    </a>
+                </div>
+                <div class="trailer">
+                    <a href="https://www.youtube.com/watch?v=jQsE85cI384">
+                        <button class="buttonon" role="button">Watch Trailer</button>
+                    </a>
+                </div>
+            </nav>
+            <section id="pageone">
+                <div class="direc">
+                <p>A film by Prashant Neel</p>
+                </div>
+                <div class="htxt">
+                    <h1>KGF CHAPTER 2</h1>
+
+                </div>
+                <div class="cast">
+                    <p>YASH</p>
+                    <p>SANJAY DUTT</p>
+
+                </div> 
+                <div class="teaser">
+                    <a href="https://www.youtube.com/watch?v=yT8H8x8iTTk">
+                        <button class="buttonon" role="button">
+                            CHAPTER 1 (Released on 21st September 2018)
+                        </button>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=Qah9sSIXJqk">
+                        <button class="buttonon" role="button">
+                            CHAPTER 2 (Released on 14th April 2022)
+                        </button>
+                    </a>
+                </div>
+                <div class="learn">
+                    <a href="https://www.primevideo.com/storefront/home/ref=atv_dl_rdr">
+                        <button class="buttonon" role="button">
+                            Watch on Prime
+                        </button>
+                    </a>    
+                </div>   
+            </section>
+        </header>
+        <section class="pagetwo" id="pagetwo">
+            <div class="come">
+                About:
+            </div>
+            <pre class="about">
+Starring:Yash, Sanjay Dutt, Raveena Tandon, Srinidhi Shetty, Prakash Raj, Achyuth Kumar, Rao Ramesh, Vasishta N. Simha, Ayyappa P. Sharma, Archana Jois, Saran Shakti, Easwari Rao, John Kokken, T.S Nagabharana and Malavika Avinash.
+Produced By : Vijay Kiragandur
+Written and Directed By : Prashant Neel
+DOP : Bhuvan Gowda
+Editor : Sunil Bharadwaj, Hemanth M Rao
+Music and Background Score By : Ravi Basrur
+            <div class="come">
+                In Amazon Prime now...
+            </div>
+        </section>
+        <footer>
+            Page created by Shreyas N Rao
+        </footer>
+    </body>
+</html>
